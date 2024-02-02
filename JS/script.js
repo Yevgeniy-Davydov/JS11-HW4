@@ -18,11 +18,16 @@ console.log(typeof reverseMaxValue);
 
 // 2 Task
 
-// const resultsArray = [1, 2, [3, [4]]];
-// let productOfArray = 1;
+const resultsArray = [1, 2, [3, [4]]];
+let productOfArray = 1;
+let flattedArray = resultsArray.flat(Infinity);
+
+for (let number of flattedArray) {
+    productOfArray *= number;
+}
 
 // for (let number of resultsArray.flat(Infinity)){
 //     productOfArray *= number;   
 // }
 
-// console.log(productOfArray);
+console.log(productOfArray);
